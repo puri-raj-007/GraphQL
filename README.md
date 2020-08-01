@@ -24,7 +24,7 @@ Sample GraphQL Scalar Queries
 
 •	Usage for book
   {
-   book(id: "123") {
+   book(id: "111") {
      title
      authors
      publisher
@@ -32,14 +32,19 @@ Sample GraphQL Scalar Queries
 
 •	Combination of both allBooks and book
 {
-   allBooks {
-     title
-     authors
-   }
-   book(id: "124") {
-     title
-     authors
-     publisher
-   }
- }
+	allBooks{
+		isn
+		title
+		publishedDate
+		authors
+	}
+	
+	book(id: "222"){
+		isn
+		title
+		authors
+		publisher
+		publishedDate
+	}
+}
 
