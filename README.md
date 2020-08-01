@@ -13,8 +13,10 @@ Sample GraphQL Scalar Queries
 •	Accessible under http://localhost:8091/rest/books
 
 •	Usage for allBooks
+
 {
-   allBooks {
+   allBooks 
+   {
      isn
      title
      authors
@@ -23,14 +25,19 @@ Sample GraphQL Scalar Queries
  }
 
 •	Usage for book
-  {
-   book(id: "111") {
+
+{
+   book(id: "111") 
+   {
+     isn
      title
      authors
      publisher
    }
+}
 
 •	Combination of both allBooks and book
+
 {
 	allBooks{
 		isn
